@@ -1,0 +1,290 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  overflow-x: hidden;
+
+}
+.lstenttitle{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.minwidth{
+  display: none;
+}
+
+.maxwidth{
+  font-size: 17px;
+}
+a{
+  text-decoration: none;
+}
+
+
+.navbar{
+  background-color: rgb(46, 88, 228);
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.362);
+  
+
+ 
+}
+
+.navcontainer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+
+.container{
+  display: flex;
+  gap: 5px;
+}
+
+
+.container a{
+  text-decoration: none;
+  padding: 15px;
+}
+
+.container a:hover{
+  background-color: rgb(251, 236, 23);
+  color: rgb(1, 25, 148);
+}
+
+.wrapper{
+ 
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.containercards{
+  
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  gap: 30px;
+
+}
+
+.card1container{
+  background-color: rgb(255, 255, 255);
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content:space-between;
+  border-radius: 10px;
+}
+.card1container h1{
+  margin-top: 50px;
+}
+
+.device{
+  padding: 10px;
+}
+
+
+h2{
+  padding:20px 0px 20px 0px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Table styles */
+
+table{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  color: black;
+}
+th,td{
+  border-bottom: 2px solid rgba(0, 0, 0, 0.445);
+  text-align:left;
+  padding: 10px;
+}
+
+td {
+  color: black;
+}
+th{
+  color: black;
+}
+
+thead{
+  border-top: 2px solid rgba(0, 0, 0, 0.445);
+  border-bottom: 4px solid rgba(0, 0, 0, 0.456);
+}
+
+
+@media (max-width:1000px){
+  .maxwidth{
+    display: none;
+  }
+  .minwidth{
+    display: block;
+  }
+
+}
+
+@media (max-width:600px){
+  .maxwidth{
+    display: none;
+  }
+  .minwidth{
+    display: flex;
+  }
+  .wrapper{
+    height: 80vh;
+    gap: 10px;
+  }
+
+  .containercards{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .card1container{
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  
+  }
+  .device{
+    font-size: x-large;
+  }
+}
+
+@media (max-width:500px) {
+
+  .wrapper{
+    height: 100vh;
+    gap: 10px;
+  }
+  .container{
+    display: none;
+  }
+
+  .minwidth{
+    padding: 20px;
+  }
+}
+
+
+@media (max-width:308px){
+  .body{
+    scroll-behavior: smooth;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wrapper{
+    width: 100%;
+    height: 100vh;  
+  }
+
+
+  
+}
+
+/* Config html styles */
+
+
+.deviceconf{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: flex-start,center;
+  gap: 10px;
+  padding: 20px;
+  color: black;
+}
+
+.deviceconf label{
+  color: black;
+}
+
+.configbody{
+  margin: 0;
+  padding: 0;
+}
+
+.configbody h2, .title{
+
+  color: black;
+  
+}
+
+.configbdwonav{
+
+  width: 80%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h2{
+  margin-left: 0;
+}
+
+.cmdbox{
+  width: 100%;
+  color: black;
+}
+
+button{
+  padding: 10px 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(11, 76, 206);
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  transition: color 200ms ease;
+  transition: scale 200ms ease-in;
+}
+
+button:hover{
+  background-color: white;
+  color: rgb(11, 76, 206);
+  border: 2px solid rgb(11, 76, 206);
+
+}
+
+button:active{
+  background-color: rgba(161, 183, 245, 0.371);
+  scale: 1.030;
+}
+
+/* Device list styles */
+
+.devicelistcontn{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+ 
+  
+}
+
+.devicetable{
+  width: 100%;
+}

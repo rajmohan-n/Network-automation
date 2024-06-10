@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Network automation </title>
+  {% load static%}
+
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navcontainer">
+      <a href="/"><h1 class="minwidth">DNA</h1></a>
+      <a href="/"><h1 class="maxwidth">DJANGO NETWORK AUTOMATION</h1></a>
+      <div class="container">
+        <a href="/">Home</a>
+        <a href="devices">Device List</a>
+        <a href="configure">Configure</a>
+        <a href="verify_config">Verify Configure</a>
+        <a href="logs">Log</a>
+      </div>
+    </div>
+  </nav>
+  <!-- nav end here -->
+
+
+<div class="devicelistcontn">
+  <h2 style="color: black;">Device List</h2>
+  <table class="devicetable">
+    <thead>
+      <tr>
+        <th>IP addresses</th>
+        <th>Hostname</th>
+        <th>Vendor</th>
+      </tr>  
+    </thead>
+
+    
+    <tbody>
+      {% for device in all_device%}
+      <tr>
+        <td>{{device.ip_address}}</td>
+        <td>{{device.hostname}}</td>
+        <td>{{device.vendor}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  
+  </table>
+</div>
+</body>
+</html>

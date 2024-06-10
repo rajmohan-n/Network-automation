@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Network automation </title>
+  {% load static%}
+
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body class="configbody">
+  <nav class="navbar">
+    <div class="navcontainer">
+      <a href="/"><h1 class="minwidth">DNA</h1></a>
+      <a href="/"><h1 class="maxwidth">DJANGO NETWORK AUTOMATION</h1></a>
+      <div class="container">
+        <a href="/">Home</a>
+        <a href="devices">Device List</a>
+        <a href="configure">Configure</a>
+        <a href="verify_config">Verify Configure</a>
+        <a href="logs">Log</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- nav end here -->
+<div  class="configbdwonav">
+  <h1 class="title"> Verify Configure</h1>
+
+  <h2>Choose Target:</h2>
+  <hr>
+  <div class="deviceconf">
+    <span>
+      <input type="checkbox" name="devicename" id="devicelist1">
+    <label for="devicelist1">- mikrotik - 192.168.2.1</label>
+
+    </span>
+
+    <span>
+      <input type="checkbox" name="devicename" id="devicelist2">
+    <label for="devicelist2">- Cisco - 192.168.2.3</label>
+    
+    </span>
+    
+    <span>
+      <input type="checkbox" name="devicename" id="devicelist3">
+    <label for="devicelist3">- Cisco - 192.168.2.4</label>
+    
+    </span>
+    <span>
+      <input type="checkbox" name="devicename" id="devicelist4">
+    <label for="devicelist4">- mikrotik - 192.168.2.5</label>
+    
+    </span>
+    <span>
+      <input type="checkbox" name="devicename" id="devicelist5">
+    <label for="devicelist5">- Cisco - 192.168.2.6</label>
+    
+    </span>
+    
+    
+  </div>
+
+  <hr>
+
+  <h2>Mikrotik  Command</h2>
+  <textarea name="mirotekcmd" id="mirotekcmd" class="cmdbox" cols="30" rows="10"></textarea>
+
+  <h2>Cisco  Command</h2>
+  <textarea name="mirotekcmd" id="mirotekcmd" class="cmdbox" cols="30" rows="10"></textarea>
+
+  <button>Submit</button>
+
+
+
+</div>
+
+
+</div>
+</body>
+</html>

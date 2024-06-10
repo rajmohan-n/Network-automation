@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Network automation </title>
+  {% load static%}
+
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navcontainer">
+      <a href="/"><h1 class="minwidth">DNA</h1></a>
+      <a href="/"><h1 class="maxwidth">DJANGO NETWORK AUTOMATION</h1></a>
+      <div class="container">
+        <a href="/">Home</a>
+        <a href="devices">Device List</a>
+        <a href="configure">Configure</a>
+        <a href="verify_config">Verify Configure</a>
+        <a href="logs">Log</a>
+      </div>
+    </div>
+  </nav>
+
+<h2  class="lstenttitle" style="color: black;">Log</h2>
+<div>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Target</th>
+        <th>Action</th>
+        <th>Status</th>
+        <th>Time</th>
+        <th>Messages</th>
+
+      </tr>  
+    </thead>
+    <tbody>
+      {%for log in logs %}
+      <tr>
+        <td>{{log.target}}</td>
+        <td>{{log.action}}</td>
+        <td>{{log.status}}</td>
+        <td>{{log.time}}</td>
+        <td>{{log.messages}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  
+  </table>
+</div>
+</body>
+</html>
